@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<!----- Head Area ----->
+<head>
+	<title>Movie Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!----- Body Area ----->
+<body>
+	<!----- Header Section ----->
+	<header>
+		<div class="header-section">
+			<a href="index.html">Animate Medium</a>
+			<div class="search-container">
+				<form>
+					<input type="text" placeholder="Search..." name="search">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+	</header>
+	
+	<!----- Navigation Section ----->
+	<nav>
+		<div class="openbtn" onclick="openNav()">☰</div>  
+		
+		<ul>
+			<li class="nav-button"><a href="index.html">Home</a></li>
+			<li class="nav-button"><a href="page2-1-discover.html" class="active">Movie Finder</a>
+				<ul class="dropdown">
+					<li><a href="page2-1-discover.html">Discover</a></li>
+					<li><a href="page2-2-upcoming.html">Upcoming</a></li>
+				</ul>
+			</li>
+			<li class="nav-button"><a href="page3-genre.html">Genres</a></li>
+			<li class="nav-button"><a href="page4-contact.html">Contact Us</a></li>
+		</ul>
+		
+		<div class="custombtn" onclick="openCustom()">O</div>
+		
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="page2-1-discover.html">Discover</a>
+			<a href="page2-2-upcoming.html">Upcoming</a>
+			<a href="page3-genre.html">Genres</a>
+			<a href="page4-contact.html">Contact Us</a>
+			<a href="attributions.html">Attributions</a>
+		</div>
+	</nav>
+	
+	<!----- Main Section ----->
+	<main id="mainContentArea">
+		<section>
+			<h1 class="movieHeaderText">The Mitchells vs The Machines</h1>
+			<div class="movieMainContainer">
+				<img src="Media/Poster/movie8.jpg" class="movieImage">
+				<div class="movieInformation">
+					<div class="movieParagraph">
+						<h3>Movie Director</h3>
+						<p>Michael Rianda</p>
+					</div>
+					<div class="movieParagraph">
+						<h3>Movie Overview</h3>
+						<p>Young Katie Mitchell embarks on a road trip with her proud parents, younger brother and beloved dog to start her first year at film school. But their plans to bond as a family soon get interrupted when the world's electronic devices come to life to stage an uprising. With help from two friendly robots, the Mitchells must now come together to save one another -- and the planet -- from the new technological revolution.</p>
+					</div>
+					<div class="movieParagraph">
+						<h3>Movie Cast</h3>
+						<p>Michael Rianda - Aaron Mitchell, WiFi Enthusiast, Furbies, ... <br> Alex Hirsch - Dirk <br> Abbi Jacobson - Katie Mitchell <br> Madeleine McGraw - Young Katie <br> Danny McBride - Rick Mitchell <br> Olivia Colman - Pal <br> Eric André - Mark Bowman <br> Maya Rudolph - Linda Mitchell</p>
+					</div>
+					<div class="movieParagraph">
+						<h3>Movie Review</h3>
+						<div class="ratingContainer">
+							<span class="fa fa-star checkedStar"></span>
+							<span class="fa fa-star checkedStar"></span>
+							<span class="fa fa-star checkedStar"></span>
+							<span class="fa fa-star checkedStar"></span>
+							<span class="fa fa-star"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section>
+			<div class="customiseForm" id="customForm">
+				<img src="Media/Cross.png" onclick="closeCustom()">
+				<h2>Customise Page</h2>
+				<p>Font Size</p>
+				<select id="fontSize" onchange="changeFontSize()">
+					<option value="16px" selected>Normal</option>
+					<option value="18px">Large</option>
+					<option value="20px">Extra Large</option>
+				</select>				
+				<p>Background Colour</p>
+				<select id="colorOption" onchange="changeBackgroundColor()">
+					<option value="#E4ECF9" selected>Blue</option>
+					<option value="white">White</option>
+					<option value="#FBCDCD">Red</option>
+					<option value="#BAFFBB">Green</option>
+					<option value="#FFF9C5">Yellow</option>
+					<option value="#F0D1FF">Purple</option>
+				</select>
+			</div>
+		</section>
+	</main>
+	
+	<!----- Footer Section ----->
+	<footer>
+		<section>
+			<p class="footerText">Created By George Holman</p>
+		
+			<a href="attributions.html" class="footerText footerAttributionLink">This website is for educational purposes only, all credit for information and content contained within this website goes to the original copyright owners.</a>
+		
+			<div class="icon-section">
+				<a href="#" class="fa fa-facebook social-icon"></a>
+				<a href="#" class="fa fa-twitter social-icon"></a>
+			</div>
+		</section>
+	</footer>
+	
+	<script src="JS/javascript.js"></script>
+</body>
+
+</html>
